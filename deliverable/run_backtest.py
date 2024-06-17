@@ -6,6 +6,9 @@ import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
 from tqdm import tqdm
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from src.equally_weighted_portfolio import equally_weighted_portfolio
 from src.risk_parity_portfolio import risk_parity_portfolio
 from src.minimum_variance_portfolio import minimum_variance_portfolio
